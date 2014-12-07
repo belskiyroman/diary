@@ -1,0 +1,25 @@
+{
+  "name": "diary",
+  "version": "0.0.1",
+  "description": "notes",
+  "main": "config.js",
+  "dependencies": {
+    "mime": "~1.2.11",
+    "socket.io": "~1.2.1",
+    "colors": "~1.0.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-jst": "*",
+    "grunt-contrib-cssmin": "~0.6.2"
+  },
+  "scripts": {
+    "test": "console.log('installed!')",
+    "start": "node run.js"
+  },
+  "author": "Belskiy Roman",
+  "license": "BSD-2-Clause"
+}

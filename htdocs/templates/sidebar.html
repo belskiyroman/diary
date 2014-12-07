@@ -1,0 +1,39 @@
+<ul>
+    <li class="btn item">
+        <a href="#records" class="link-bloсk"><i class="fa fa-newspaper-o"></i><span class="text-btn">Все записи</span></a>
+    </li>
+
+    <li class="btn item">
+        <a href="#write" class="link-bloсk"><i class="fa fa-plus"></i><span class="text-btn">Добавить</span></a>
+    </li>
+
+
+
+    <%
+        'if => active';
+        'else => not active';
+    %>
+
+
+
+    <% if (model_id) { %>
+        <li class="btn item">
+            <a href="#remove/<%= model_id %>" class="link-bloсk"><i class="fa fa-ban"></i><span class="text-btn">Удалить</span></a>
+        </li>
+    <% } else { %>
+        <li class="btn item blocked">
+            <span class="link-bloсk"><i class="fa fa-ban"></i><span class="text-btn">Удалить</span></span>
+        </li>
+    <% } %>
+
+
+    <% if (model_id) { %>
+        <li class="add btn item">
+            <a href="#edit/<%= model_id %>" class="link-bloсk"><i class="fa fa-edit"></i><span class="text-btn">Редактировать</span></a>
+        </li>
+    <% } else { %>
+        <li class="add btn item blocked">
+            <span class="link-bloсk"><i class="fa fa-edit"></i><span class="text-btn">Редактировать</span></span>
+        </li>
+    <% } %>
+</ul>

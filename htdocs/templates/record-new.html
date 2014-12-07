@@ -1,0 +1,5 @@
+<h1 class="text-center header-2"><%= (body ? 'Редактирование Записи' : 'Новая Запись') %></h1>
+<input type="text" class="title-record" tabindex="1" autofocus value="<%= title || '' %>">
+<textarea class="body-record" tabindex="2"><%= body || '' %></textarea>
+<button class="btn-2 send" tabindex="3">Ок</button>
+

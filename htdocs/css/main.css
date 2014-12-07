@@ -1,0 +1,271 @@
+.display-none {
+    display: none;
+}
+
+.text-center {
+    text-align: center;;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 90%;
+}
+
+.btn {
+    cursor: pointer;
+    color: #a7b3cb;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px 10px  20px;
+}
+
+.btn-2 {
+    width: 88px;
+    margin: 0 auto;
+    display: block;
+    height: 40px;
+    padding: 0 1em;
+    font-size: 13px !important;
+    line-height: 40px;
+    color: #fff;
+    text-shadow: none;
+    border: none;
+    background: #1e8cbe;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #606d86;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    /*margin: 0.67em 0;*/
+}
+
+.header-2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 0 -1px;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.blocked {
+    color: silver !important;
+    background: rgba(0, 0, 0, 0.16)  !important;
+}
+
+
+.item .fa {
+    padding-right: 10px;
+}
+
+.item:not(.blocked):hover .fa-plus {
+    color: rgb(0, 213, 0);
+}
+
+.item:not(.blocked):hover .fa-times,
+.item:not(.blocked):hover .fa-ban {
+    color: red;
+}
+
+.item:not(.blocked):hover .fa-newspaper-o {
+    color: rgb(255, 254, 152);
+}
+
+.item:not(.blocked):hover .fa-edit {
+    color: rgb(0, 186, 219);
+}
+
+
+
+
+
+
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #f4f4f4;
+    color: color: #555;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header {
+    background: #424b5f;
+    color: white;
+    height: 60px;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    position: fixed;
+    z-index: 2;
+}
+
+#sidebar {
+    background: #4f5a6e;
+    height: 100%;
+    float: left;
+    width: 250px;
+    position: fixed;
+    border-right: solid 2px #74839E;
+    z-index: 1;
+}
+
+#sidebar ul {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 80px;
+}
+
+#sidebar .item {
+    width: 250px;
+    padding: 0px;
+    border-bottom: solid 1px rgba(192, 192, 192, 0.51);
+}
+
+#sidebar .item .link-bloсk {
+    display: block;
+    padding: 10px 10px 10px 20px;
+}
+
+#sidebar .item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#content {
+    float: left;
+    list-style: none;
+    width: 100%;
+    padding: 60px 0px 60px 250px;
+    z-index: 0;
+}
+
+#content ul {
+    padding: 0px;
+}
+
+.record-item {
+    display: block;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 1px 1px 2px -1px;
+    position: relative;
+}
+
+.remove {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(234, 84, 84);
+}
+
+.record-once {
+    background: white;
+    padding: 40px;
+    margin: 10px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 1px 1px 2px -1px;
+}
+
+.record-body {
+    text-align: left;
+    padding: 0 30px;
+    font-size: large;
+    white-space: pre;
+}
+
+.record-once-date-create {
+    text-align: right;
+    padding: 30px;
+}
+
+.title-record,
+.body-record {
+    width: 80%;
+    margin: 10px 10%;
+    height: 40px;
+    padding: 10px;
+    color: #555;
+    font-size: 15px;
+    background: #f9f9f9;
+    border: 1px solid #dfdfdf;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c6d9e9;
+}
+
+.body-record {
+    height: 250px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    #content {
+        padding-left: 0px;
+    }
+
+    #sidebar {
+        z-index: 3;
+        display: inline-block;
+        max-width: 80%;
+        height: 60px;
+        right: 0;
+        width: initial;
+    }
+
+    #sidebar ul {
+        padding: 0;
+        height: 60px;
+    }
+
+    #sidebar ul .item {
+        display: table-cell;
+        text-align: center;
+        font-size: 28px;
+        border: none;
+        width: 60px;
+        height: inherit;
+        vertical-align: middle;
+        border-left: solid 1px rgba(192, 192, 192, 0.51);
+    }
+
+    #sidebar .text-btn {
+        display: none;
+    }
+}
