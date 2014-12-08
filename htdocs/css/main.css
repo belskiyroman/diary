@@ -203,16 +203,16 @@ body {
     text-align: left;
     padding: 0 30px;
     font-size: large;
-    white-space: pre;
+    white-space: pre-wrap;
 }
 
 .record-once-date-create {
-    text-align: right;
     padding: 30px;
 }
 
 .title-record,
 .body-record {
+    pre-wrap: pre-wrap;
     width: 80%;
     margin: 10px 10%;
     height: 40px;
