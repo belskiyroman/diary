@@ -276,11 +276,13 @@ body {
     }
 
     #sidebar {
+        max-width: 100%;
         width: 100%;
     }
 
     #sidebar ul .item {
         width: 25%;
+        float: left;
     }
 }
 
