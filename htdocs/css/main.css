@@ -274,6 +274,14 @@ body {
     .logo {
         display: none;
     }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    #sidebar ul .item {
+        width: 25%;
+    }
 }
 
 
